@@ -65,7 +65,7 @@ export default function ReportsPage() {
             {db.categories.map((c) => {
               const sec = db.workers.filter((w) => w.categoryId === c.id && (w.status === "confirmed" || w.status === "exchange")).length;
               const goal = c.target || 1;
-              return <div key={c.id} className="flex flex-col items-center text-center"><ScoreRing score={Math.min(100, Math.round((sec / goal) * 100))} size={64} color={c.color ?? "#0ea5e9"} /><p className="mt-1 text-xs font-medium">{c.name}</p><p className="text-xs text-muted-foreground">{sec}/{c.target ?? 0}</p></div>;
+              return <div key={c.id} className="flex flex-col items-center text-center"><ScoreRing score={Math.min(100, Math.round((sec / goal) * 100))} size={64} color={c.color ?? "#c2652a"} /><p className="mt-1 text-xs font-medium">{c.name}</p><p className="text-xs text-muted-foreground">{sec}/{c.target ?? 0}</p></div>;
             })}
           </div>
         </Card>

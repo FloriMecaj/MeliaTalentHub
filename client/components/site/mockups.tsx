@@ -154,7 +154,7 @@ export function AnalyticsMock() {
         <div className="space-y-2">{[["Not invited", 23, "bg-amber-500"], ["Awaiting", 4, "bg-amber-500"], ["Confirmed", 7, "bg-emerald-500"], ["Declined", 3, "bg-red-400"]].map(([l, v, c]) => (
           <div key={l as string} className="space-y-0.5"><div className="flex justify-between text-[10px]"><span>{l}</span><b>{v}</b></div><div className="h-1.5 rounded-full bg-muted"><div className={`h-full rounded-full ${c}`} style={{ width: `${((v as number) / 23) * 100}%` }} /></div></div>
         ))}</div>
-        <div className="flex flex-col items-center gap-1"><Ring v={22} size={64} color="#0ea5e9" /><p className="text-[10px] text-muted-foreground">of target</p></div>
+        <div className="flex flex-col items-center gap-1"><Ring v={22} size={64} color="#c2652a" /><p className="text-[10px] text-muted-foreground">of target</p></div>
       </div>
       <div className="flex items-center gap-2 rounded-lg bg-amber-500/10 p-2 text-[11px]"><BellIcon className="size-3.5 text-amber-600" />3 declined spots to backfill</div>
     </div>

@@ -14,7 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { deleteCategory, moveCategory, saveCategory, useDb } from "@/lib/store";
 import type { Category } from "@/lib/types";
 
-const COLORS = ["#0ea5e9", "#f59e0b", "#10b981", "#8b5cf6", "#ef4444", "#64748b"];
+const COLORS = ["#c2652a", "#e9a21c", "#5f8f3e", "#a8324a", "#b91c1c", "#8a6f5c"];
 
 export default function CategoriesPage() {
   const db = useDb();

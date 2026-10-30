@@ -130,7 +130,7 @@ export default function AdminOverview() {
             const pct = goal ? Math.min(100, Math.round((sec / goal) * 100)) : 0;
             return (
               <div key={c.id} className="flex flex-col items-center gap-3 rounded-xl border p-5 text-center">
-                <ScoreRing score={pct} size={96} color={c.color ?? "#0ea5e9"} />
+                <ScoreRing score={pct} size={96} color={c.color ?? "#c2652a"} />
                 <div><p className="font-semibold">{c.name}</p><p className="text-xs text-muted-foreground">{sec} of {goal} secured</p></div>
               </div>
             );
